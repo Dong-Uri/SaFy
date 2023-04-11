@@ -84,6 +84,35 @@
     - ACC 알고리즘
     - 경로(차선)변경 및 Lattice planner 충돌 회피 알고리즘
 
+## 경로계획
+
+![dijkstra](https://user-images.githubusercontent.com/109489851/231050240-dd9c4dc9-54d5-4e4e-b2da-4d9eb857c8fc.gif)
+- Dijkstra
+
 ## Lidar
+
+![ACC](https://user-images.githubusercontent.com/109489851/231050779-e3cad656-22f1-4b6b-9ab0-e229cd03b877.gif)
+- ACC
+
+![lane_change](https://user-images.githubusercontent.com/109489851/231051150-a7e087a2-c39a-4dc8-b0d7-378184275997.gif)
+- Lane Change
+
+![lattice_planner](https://user-images.githubusercontent.com/109489851/231051557-e76454ea-52d3-4aae-884a-6ccace69c3c9.gif)
+- Lattice Planner
+
 ## Camera
+
+![lane_detection](https://user-images.githubusercontent.com/109489851/231051602-ee3ad10d-0749-4ef6-b921-37de4979edb6.gif)
+- Lane Detection
+
+![color_detection](https://user-images.githubusercontent.com/109489851/231051780-a92c2a62-f07d-4f7b-a0a3-ba6d10b2f301.gif)
+- 도로 인식
+
 ## YOLO
+
+![pedestrian_detection](https://user-images.githubusercontent.com/109489851/231052040-0c3c4c70-8195-43f3-a55b-a2b0033f8b77.gif)
+- 보행자 인식
+
+![traffic_stop](https://user-images.githubusercontent.com/109489851/231052187-124af8ca-995e-4add-b5a0-d3cfb28933ce.gif)
+![traffic_go](https://user-images.githubusercontent.com/109489851/231052233-c2191b7f-5235-459d-9d29-0eecdede6673.gif)
+- 신호 인식

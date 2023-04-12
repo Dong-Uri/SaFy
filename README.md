@@ -91,8 +91,8 @@
 
 ![dijkstra](https://user-images.githubusercontent.com/109489851/231050240-dd9c4dc9-54d5-4e4e-b2da-4d9eb857c8fc.gif)
 - Dijkstra
- - MGeo 데이터를 통해 시작점과 도착점을 찍으면 dijstra를 통한 전역 경로 계획을 실시합니다.
- - 이 전역 경로를 통해 지역 경로 계획을 실시하게 됩니다.
+  - MGeo 데이터를 통해 시작점과 도착점을 찍으면 dijstra를 통한 전역 경로 계획을 실시합니다.
+  - 이 전역 경로를 통해 지역 경로 계획을 실시하게 됩니다.
 
 ## Lidar
 
@@ -100,17 +100,17 @@
 
 ![ACC](https://user-images.githubusercontent.com/109489851/231050779-e3cad656-22f1-4b6b-9ab0-e229cd03b877.gif)
 - ACC
- - Pure pursuit 알고리즘을 통해 조향각 계획을 진행하였습니다.
- - 곡률 계산을 통한 경로기반 속도 계획 및 PID 제어를 통해 속도 제어를 진행하였습니다.
- - ACC 알고리즘을 통해 Lidar로 인식된 앞 차에 대해 안전거리를 유지하며 주행하도록 진행하였습니다.
+  - Pure pursuit 알고리즘을 통해 조향각 계획을 진행하였습니다.
+  - 곡률 계산을 통한 경로기반 속도 계획 및 PID 제어를 통해 속도 제어를 진행하였습니다.
+  - ACC 알고리즘을 통해 Lidar로 인식된 앞 차에 대해 안전거리를 유지하며 주행하도록 진행하였습니다.
 
 ![lane_change](https://user-images.githubusercontent.com/109489851/231051150-a7e087a2-c39a-4dc8-b0d7-378184275997.gif)
 - Lane Change
- - 자연스러운 차선 변경을 위해 현재 차선 내의 시작점과 변경할 차선 내의 도착점에 대해 3차곡선을 계획하여 보다 부드러운 차선 변경이 가능하도록 진행하였습니다.
+  - 자연스러운 차선 변경을 위해 현재 차선 내의 시작점과 변경할 차선 내의 도착점에 대해 3차곡선을 계획하여 보다 부드러운 차선 변경이 가능하도록 진행하였습니다.
 
 ![lattice_planner](https://user-images.githubusercontent.com/109489851/231051557-e76454ea-52d3-4aae-884a-6ccace69c3c9.gif)
 - Lattice Planner
- - Lidar로 장애물을 인식했을 때 피할 수 있는 회피경로를 Lattice Path Planner를 통해 생성하여 충돌을 회피할 수 있도록 진행하였습니다.
+  - Lidar로 장애물을 인식했을 때 피할 수 있는 회피경로를 Lattice Path Planner를 통해 생성하여 충돌을 회피할 수 있도록 진행하였습니다.
 
 ## Camera
 
@@ -118,11 +118,11 @@
 
 ![lane_detection](https://user-images.githubusercontent.com/109489851/231051602-ee3ad10d-0749-4ef6-b921-37de4979edb6.gif)
 - Lane Detection
- - 전방 도로 이미지를 처리한 후 scikit-learn의 linear 모델인 RANSAC을 이용하여 curve fitting을 통해 차선을 인지하여 GPS정보가 없을때도 차선 인식을 통한 주행이 가능하도록 진행하였습니다.
+  - 전방 도로 이미지를 처리한 후 scikit-learn의 linear 모델인 RANSAC을 이용하여 curve fitting을 통해 차선을 인지하여 GPS정보가 없을때도 차선 인식을 통한 주행이 가능하도록 진행하였습니다.
 
 ![color_detection](https://user-images.githubusercontent.com/109489851/231051780-a92c2a62-f07d-4f7b-a0a3-ba6d10b2f301.gif)
 - 도로 인식
- - 전방 도로 이미지를 처리한 후 색상 인지를 통해 어린이 보호구역, 요금소 진입 구간 등을 인식했을 때 속도를 조절할 수 있도록 진행하였습니다.
+  - 전방 도로 이미지를 처리한 후 색상 인지를 통해 어린이 보호구역, 요금소 진입 구간 등을 인식했을 때 속도를 조절할 수 있도록 진행하였습니다.
 
 ## YOLO
 
@@ -130,12 +130,12 @@
 
 ![pedestrian_detection](https://user-images.githubusercontent.com/109489851/231052040-0c3c4c70-8195-43f3-a55b-a2b0033f8b77.gif)
 - 보행자 인식
- - 인식된 보행자가 차량에 가까워지는 경우 긴급 정지가 되도록 진행하였습니다.
+  - 인식된 보행자가 차량에 가까워지는 경우 긴급 정지가 되도록 진행하였습니다.
 
 ![traffic_stop](https://user-images.githubusercontent.com/109489851/231052187-124af8ca-995e-4add-b5a0-d3cfb28933ce.gif)
 ![traffic_go](https://user-images.githubusercontent.com/109489851/231052233-c2191b7f-5235-459d-9d29-0eecdede6673.gif)
 - 신호 인식
- - 인식된 신호등에 대해 어떤 신호인지 파악하는 알고리즘을 통해 빨간 불이라면 멈추고, 파란 불이라면 주행하도록 진행하였습니다.
+  - 인식된 신호등에 대해 어떤 신호인지 파악하는 알고리즘을 통해 빨간 불이라면 멈추고, 파란 불이라면 주행하도록 진행하였습니다.
  
 ## P.S.
 
